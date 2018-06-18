@@ -1,0 +1,9 @@
+<button (click)="toggleShowPass()">Do something</button>
+<p *ngIf="showPass">
+  secret is : nona
+</p>
+<div 
+  *ngFor="let logElement of masiv;let i = index"
+  [ngStyle]="{backgroundColor: i > 4 ? 'blue' : 'transparent'}"
+  [ngClass]="{'white-text': i > 4}"
+>{{logElement}} i={{i}}</div>
